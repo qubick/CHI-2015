@@ -2,7 +2,7 @@ module roller(){
  	difference(){
  		color("red")
  			translate([5,1,0])
- 			cylinder(r=3.5, h=0.8, $fn=50);
+ 			cylinder(r=3.5, h=0.5, $fn=50);
  
  		translate([5,1,-.5])
  			cylinder(r=0.7, h=3, $fn=50);
@@ -16,8 +16,8 @@ module axes(){
 	difference(){
 		//innder dowel
 		union(){
-			cylinder($fn=50, r=0.4, h=3);
-			translate([0, 0, 3]) sphere($fn=50, r=0.7);
+			cylinder($fn=50, r=0.4, h=2);
+			translate([0, 0, 2.5]) sphere($fn=50, r=0.7);
 		}
 		translate([-1, - .1, 1]) cube([3, .2 ,6]);
 	}
@@ -26,4 +26,4 @@ module axes(){
 
 axes();
 
-//roller();
+roller();
