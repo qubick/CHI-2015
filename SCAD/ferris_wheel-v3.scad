@@ -33,7 +33,7 @@ module ferris(factor){
 
 }
 
-translate([30, -24, 5]) scale(.25)
+translate([30, -24, 3]) scale(.25)
 difference(){
 	ferris(2.5);
 
@@ -44,7 +44,7 @@ difference(){
 translate([30, 40, 1]) scale(6)
 	axes();
 
-translate([0, -30, 1]) scale(6) roller();
+translate([0, -30, 0]) scale(6) roller();
 
 //base
 cube([60, 80, 1]);
