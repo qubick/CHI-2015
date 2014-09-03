@@ -3,7 +3,7 @@ use <wheel-v3.scad>;
 //http://www.thingiverse.com/thing:249
 module car(factor){
 	difference(){
-		scale([factor*0.5, factor, factor])
+		scale([factor*0.3, factor, factor])
 		import("component/ActionCar.stl");
 	
 		translate([-5, 0, 5]) 
@@ -18,11 +18,11 @@ car(1);
 
 
 //front wheel
-translate([3, -13, 3]) rotate([0, 90, 0]) scale(1.5)
+translate([1, -13, 3]) rotate([0, 90, 0]) scale(1.5)
 	axes();
 
 //back wheel
-translate([3, 15, 3]) rotate([0, 90, 0]) scale(1.5)
+translate([1, 15, 3]) rotate([0, 90, 0]) scale(1.5)
 	axes();
 
 
