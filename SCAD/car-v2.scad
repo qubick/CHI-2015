@@ -7,12 +7,12 @@ module car(factor){
 		import("component/ActionCar.stl");
 	
 		translate([-5, 0, 5]) 
-		cube([10, 70, 20], center=true);
+		cube([10, 70, 30], center=true);
 	}
 }
 
 //page base
-translate([0,-30, -15]) cube([1, 60, 40]);
+//translate([0,-30, -15]) cube([1, 60, 40]);
 
 car(1);
 
