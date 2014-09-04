@@ -1,12 +1,4 @@
 use <hinge-lego.scad>;
-/*
-use <hinge-02.scad>;
-cylinder_top();
-translate([0, -.2, -.3])
- 	rotate([0, 0, -50])
- 	cylinder_bottom();
-*/
-//http://www.thingiverse.com/thing:85978
 
 module ship(factor){
 	difference(){
@@ -42,7 +34,7 @@ module sail(factor){
 
 
 //base
-cube([1, 250, 200], center=true);
+//cube([1, 250, 200], center=true);
 
 translate([41, 30, 0]) rotate([90, 0, 0])
 	dowel(2);
