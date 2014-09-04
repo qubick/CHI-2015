@@ -5,21 +5,21 @@ module roller(){
  			cylinder(r=3.5, h=0.5, $fn=50);
  
  		translate([5,1,-.5])
- 			cylinder(r=0.7, h=3, $fn=50);
+ 			cylinder(r=0.9, h=3, $fn=50);
  	}
 }
 
 module axes(){
 
-	cylinder($fn=50, r=1, h=.5);
+	cylinder($fn=50, r=1.2, h=.5);
 
 	difference(){
 		//innder dowel
 		union(){
-			cylinder($fn=50, r=0.4, h=2);
-			translate([0, 0, 2.5]) sphere($fn=50, r=0.7);
+			cylinder($fn=50, r=0.6, h=2);
+			translate([0, 0, 2.5]) sphere($fn=50, r=0.9);
 		}
-		translate([-1, - .1, 1]) cube([3, .2 ,6]);
+		translate([-1, - .2, 1]) cube([3, .3 ,6]);
 	}
 	
 }

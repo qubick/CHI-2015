@@ -13,7 +13,7 @@ module box(){
 
 
 hinge();
-box();
+translate([12,0,2]) box();
 
 //for comparison
 //translate([0, -5, 0]) cube([20, 4, 3]);
