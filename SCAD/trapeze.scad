@@ -12,7 +12,6 @@ module seat(){
  				cylinder(r=4, h=3, $fn=50);
  		}
 }
-
 //base
 translate([0, 15, 16]) cube([150, 100, 1]);
 
@@ -27,10 +26,10 @@ module swing(){
 
 module tree(){
 	import("component/Gnome_TreeBranch.stl");
+	//translate([40, 40, 30]) rotate ([270, 0, 0]) scale(.25, .08, .08) import("component/Gnome_TreeIndeed.stl");
 	import("component/Gnome_TreeMiddle.stl");
 	import("component/Gnome_TreeTop.stl");
-
 }
 
 scale([1, 1, 0.5]) tree();
-translate([95, 80, 0]) rotate([0, 0, 290]) scale([1,1,2]) swing();
+translate([95, 80, 5]) rotate([0, 0, 290]) scale([1,1,2]) swing();
