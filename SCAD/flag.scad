@@ -1,5 +1,6 @@
 use <hinge-02.scad>;
 use <mathhinge.scad>;
+use <deprecated/car.scad>;
 
 module hinge(){
 	cylinder_top();
@@ -19,20 +20,29 @@ module waving(factor){
 	import("component/flagscaled.stl");
 }
 
+module car(factor){
+	//http://www.thingiverse.com/thing:249
+	scale([factor*0.5, factor, factor])
+	import("component/ActionCar.stl");
+}
+
 //hinge();
 translate([52, 15, 120]) rotate([0, 90, 0]) scale([2, 2, 2])
 math_hinge();
 
 
-translate([52, 17, 70]) rotate([90, 0, 90])
-	USA(20);
+//translate([52, 17, 70]) rotate([90, 0, 90])
+	//USA(20);
 
-//rotate([0, 0, 40]) translate([3, -67, 0]) 
-//waving(1);
+rotate([0, 0, 40]) translate([3, -67, 0]) 
+waving(1);
 
 //dowel
 translate([50, 0, 10])
 cube([7, 7, 130]);
 
 //base page
-//cube([300, 1, 200]);
+cube([300, 1, 200]);
+
+translate([250, -18, 70]) rotate([0, 0, 90]) 
+	scale([3,3,3]) entirecar();
