@@ -18,7 +18,7 @@ module outer_box(){
  }
  
 module inner_slide(){
- 	color("blue")
+ 	//color("blue")
  		translate([1, 1.1, 1.2]){
  			cube([11, 3.8, 0.7]);
  			cube([1, 3.8, .7]);
@@ -28,8 +28,8 @@ module inner_slide(){
  
 module pulley(){
 	outer_box();
-	translate([5, 0, 0])
-		inner_slide();
+	translate([0, 0, 0])
+		% inner_slide();
 }
 module  straw(){
 	difference(){
