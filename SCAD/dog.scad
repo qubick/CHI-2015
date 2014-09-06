@@ -1,4 +1,4 @@
-use <mathhinge.scad>;
+use <hinge-lego.scad>;
 use <door-f.scad>;
 
 module dog(factor){
@@ -17,8 +17,14 @@ dog(1);
 translate([0, -60, -15])
 cube([1, 150, 100]);
 
-translate([-5, 0, -5]) rotate([0, 0, 90])
-math_hinge();
+translate([-2, 15, -7]) rotate([90, 0, 270]) box();
 
-translate([-13, 0, 8]) rotate([0, -90, 0])
-door();
+module fence(){
+	translate([-14, 0, -5]) rotate([0, 0, 90])
+		hinge();
+
+	translate([-13, 0, 8]) rotate([0, -90, 0])
+		door();
+}
+
+translate([3, 135, 0]) rotate([0, 90, 0]) fence();
