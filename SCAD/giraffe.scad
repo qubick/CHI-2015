@@ -36,4 +36,4 @@ module door(){
 		hinge();
 }
 
-translate([11, 0, 60]) door();
+translate([11, 0, 100]) door();
