@@ -1,4 +1,4 @@
-use <mathhinge.scad>;
+use <hinge-lego.scad>;
 use <fence.scad>;
 
 //math_hinge();
@@ -24,11 +24,16 @@ giraffe(10);
 
 //base
 translate([0, -60, -10])
-cube([1, 150, 100]);
+	cube([1, 150, 100]);
+translate([-2, 80, 30]) rotate([180, 90, 0]) box();
 
-//translate([-50, 30, 0]) rotate([0, 0, -90])
-translate([3, 0, -5]) scale([1, 0.6, 0.8])
+module door(){
+	//translate([-50, 30, 0]) rotate([0, 0, -90])
+	translate([3, 0, -5]) scale([1, 0.6, 0.8])
 		fence();
 
-translate([-5, 40, 40]) rotate([90, 90, 0])
-math_hinge();
+	translate([-13, 55, 40]) rotate([90, 90, 90])
+		hinge();
+}
+
+translate([11, 0, 60]) door();
