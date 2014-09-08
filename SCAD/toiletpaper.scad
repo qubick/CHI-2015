@@ -32,14 +32,14 @@ module outer_box(){
 module inner_slide(){
  	//color("blue")
  		translate([1, 1.1, 0.8]){
- 			cube([11, 3.8, 0.7]);
- 			cube([1, 3.8, 1]);
+ 			cube([11, 4.5, 0.7]);
+ 			cube([1, 4.5, 1]);
  	}
 }
 
 module pulley(){
 	outer_box();
-	inner_slide();
+	% inner_slide();
 }
 
 
@@ -48,7 +48,7 @@ translate([10, 30, 0]) scale([3, 3, 3])
 
 //base
 difference(){
-	translate([-10, -15, 0]) 
+	translate([-10, 20, 0]) 
 		cube([60, 80, 1]);
 }
 
@@ -61,6 +61,6 @@ difference(){
 }
 
 
-//toilet?
-translate([40, -5, 62]) 
+//toilet
+translate([0, 80, 6]) rotate([180, 0,0]) translate([40, -5, 62]) 
 	toilet();
