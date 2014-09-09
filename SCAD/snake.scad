@@ -28,7 +28,7 @@ module door(){
 	translate([-8, 0, -5]) scale([1, 0.6, 0.7])
 		fence();
 
-	translate([-22, 53, 35]) rotate([0, 90, 0])
+	translate([-24, 53, 35]) rotate([0, 90, 0])
 		hinge();
 }
 
