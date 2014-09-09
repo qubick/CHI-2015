@@ -18,14 +18,14 @@ translate([0, -60, -10])
 module door(){
 	translate([-75, 45, 0]) rotate([0, 0, -90])
 		fence();
-	translate([5, 60, 50]) rotate([90, 90, 0])
+	translate([5, 61, 50]) rotate([90, 90, 0])
 		hinge();
 }
 
 
 translate([-2, 80, 35]) rotate([90, 90, 270]) box();
 
-translate([59, 230, 0]) rotate([0, 0, 90]) 
+translate([59, 215, 0]) rotate([0, 0, 90]) 
 door();
 elephant(1.2);
 
