@@ -36,7 +36,7 @@ module left_door(){
 		hinge();
 }
 
-translate([-55, 10, -100]) rotate([0, 0, 270]) right_door();
+translate([-54, 10, -100]) rotate([0, 0, 270]) right_door();
 translate([14, -30, -105]) left_door();
 
 //translate([0, 0, 5]) camel(1.2);
