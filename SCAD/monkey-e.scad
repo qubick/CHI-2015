@@ -26,7 +26,7 @@ module left_door(){
 		translate([-20, -10, 45]) //window
 			cube([15, 30, 20]);
 	}
-	translate([-15, -17, 55]) rotate([0, 90, 0])
+	translate([-16, -17, 55]) rotate([0, 90, 0])
 		hinge();
 }
 
