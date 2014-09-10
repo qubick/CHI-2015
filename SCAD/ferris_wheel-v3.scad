@@ -32,19 +32,24 @@ module ferris(factor){
 	}
 
 }
+module wheel_frame(){
+	translate([30, -24, 3]) scale(.25)
+		difference(){
+			ferris(2.5);
 
-translate([30, -24, 3]) scale(.25)
-difference(){
-	ferris(2.5);
+		//hole in the middle
+		cylinder(r=20, h=42, center=true);
+	}
 
-	//hole in the middle
-	cylinder(r=20, h=42, center=true);
+	translate([0, -30, 0]) scale(6) roller();
 }
+
+translate([0, 64, 2]) wheel_frame();
 
 translate([30, 40, 1]) scale(6)
 	axes();
 
-translate([0, -30, 0]) scale(6) roller();
+
 
 //base
 cube([60, 80, 1]);

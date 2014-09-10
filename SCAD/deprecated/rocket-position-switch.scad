@@ -36,23 +36,14 @@ module plate(){
 	//flame(.7);
 
 //base plate
-translate([0, -40, 0]) plate();
-
-module slider(length){
-	translate([0,0, 20]) {
-	//translate([3, 30, 40]) rotate([90, 0, 90])
-		//rocket(1);
+ plate();
+translate([0,0, 20]) {
+	translate([3, 30, 40]) rotate([90, 0, 90])
+		rocket(1);
 
 	translate([-2, 28, 20]) {
-		cube([2, 40*length, 5]);
-		difference(){
-			cube([5, 5, 5]);
-			translate([1.5, 2.5, 2.5]) rotate([0, 90, 0]) cylinder(r=1, h=10, $fn=50);
-		}
-		translate([1.5, 40*length-2.5, 2.5]) rotate([0, 90, 0]) cylinder(r=.9, h=5, $fn=50);
-//		translate([0, 33, 0]) cube([5, 2, 5]);
-		}
+		cube([2, 35, 10]);
+		cube([5, 5, 10]);
+		translate([0, 33, 0]) cube([5, 2, 10]);
 	}
 }
-
-slider(2);
