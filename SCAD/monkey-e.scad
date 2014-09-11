@@ -14,7 +14,7 @@ module monkey(factor){
 module right_door(){
 	rotate([0, 0, 90]) translate([68, 32, -5]) scale([1, .5, 1.2])
 		fence();
-	translate([-80, 49, 52]) rotate([270, 90, 0])
+	translate([-80, 49, 62]) rotate([270, 90, 0])
 		hinge();
 }
 
@@ -26,7 +26,7 @@ module left_door(){
 		translate([-20, -10, 45]) //window
 			cube([15, 30, 20]);
 	}
-	translate([-13, -39, 55]) rotate([180, 90, 0])
+	translate([-13, -39, 65]) rotate([180, 90, 0])
 		hinge();
 }
 

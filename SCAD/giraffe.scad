@@ -36,4 +36,6 @@ module door(){
 		hinge();
 }
 
-translate([11, 0, 100]) door();
+//translate([11, 0, 100]) 
+translate([-50, 90, 0]) rotate([0, 0, 230])
+door();

@@ -15,6 +15,15 @@ module cobra(factor){
 	}
 }
 
+module door(){
+	//translate([-50, 30, 0]) rotate([0, 0, -90])
+	translate([-8, 0, -5]) scale([1, 0.6, 0.7])
+		fence();
+
+	translate([-27, 54, 45]) rotate([0, 90, 0])
+		hinge();
+}
+
 translate([-6, 20, 0]) rotate([0, 0, 270]) cobra(0.4);
 
 
@@ -22,14 +31,5 @@ translate([-6, 20, 0]) rotate([0, 0, 270]) cobra(0.4);
 translate([0, -60, -10]) cube([1, 150, 100]);
 translate([-2, 50, 30]) rotate([90, 90, 270]) box();
 
-
-module door(){
-	//translate([-50, 30, 0]) rotate([0, 0, -90])
-	translate([-8, 0, -5]) scale([1, 0.6, 0.7])
-		fence();
-
-	translate([-27, 54, 35]) rotate([0, 90, 0])
-		hinge();
-}
 
 translate([22, 130, 0]) door();
