@@ -11,16 +11,15 @@ module dog(factor){
 }
 
 
-dog(1);
+translate([0, 10, 5]) dog(1);
 
 //base
-translate([0, -60, -15])
-cube([1, 150, 100]);
+translate([0, -60, -15]) cube([1, 150, 100]);
 
 translate([-2, 15, -7]) rotate([90, 0, 270]) box();
 
 module fence(){
-	translate([-14, 0, -5]) rotate([0, 0, 90])
+	translate([8, 0, -2]) rotate([180, 0, 90])
 		hinge();
 
 	translate([-13, 0, 8]) rotate([0, -90, 0])

@@ -11,21 +11,20 @@ module frog(factor){
 	}
 }
 
+module door(){
+	translate([-75, 45, 0]) rotate([0, 0, -90])
+		fence();
+	translate([5, 64, 50]) rotate([90, 90, 0])
+		hinge();
+}
+
 //base
 translate([0, -60, -10])
 	cube([1, 150, 100]);
 
-module door(){
-	translate([-75, 45, 0]) rotate([0, 0, -90])
-		fence();
-	translate([5, 61, 50]) rotate([90, 90, 0])
-		hinge();
-}
+translate([-2, 70, 35]) rotate([90, 90, 270]) box();
+//frog(1.2);
 
 
-translate([-2, 80, 35]) rotate([90, 90, 270]) box();
-
-translate([59, 230, 0]) rotate([0, 0, 90]) 
-door();
-frog(1.2);
+translate([59, 230, 0]) rotate([0, 0, 90]) door();
 
