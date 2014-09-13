@@ -1,11 +1,11 @@
-use <hinge-lego-narrow.scad>;
-use <fence.scad>;
+use <../SCAD/hinge-lego-narrow.scad>;
+use <../SCAD/fence.scad>;
 
 module frog(factor){
 
 	difference(){
 		translate([0, 0, 20]) scale([factor*0.5, factor, factor*1.3])
-		import("component/frog.stl");
+		import("../SCAD/component/frog.stl");
 
 		translate([0, -50, -10]) cube([30, 100, 100]);
 	}
