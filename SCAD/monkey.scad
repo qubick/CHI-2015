@@ -6,7 +6,7 @@ module monkey(factor){
 		//http://www.thingiverse.com/thing:182232
 		scale([factor*0.7, factor, factor])
 		import("component/Monkey_t.stl");
-		//translate([0, -50, -10]) cube([200, 200, 200]);
+		translate([0, -50, -10]) cube([200, 200, 200]);
 	}
 }
 
