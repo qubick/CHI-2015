@@ -1,4 +1,4 @@
-use <../SCAD/hinge-lego-narrow.scad>;
+use <../SCAD/hinge-lego.scad>;
 use <../SCAD/fence.scad>;
 
 module frog(factor){
@@ -14,7 +14,7 @@ module frog(factor){
 module door(){
 	translate([-75, 45, 0]) rotate([0, 0, -90])
 		fence();
-	translate([5, 64, 50]) rotate([90, 90, 0])
+	translate([5, 64, 60]) rotate([90, 90, 0])
 		hinge();
 }
 

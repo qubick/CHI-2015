@@ -1,4 +1,4 @@
-use <../SCAD/hinge-lego-narrow.scad>;
+use <../SCAD/hinge-lego.scad>;
 use <../SCAD/fence.scad>;
 
 //math_hinge();
@@ -28,7 +28,7 @@ module door(){
 	translate([3, 0, -5]) scale([1, 0.6, 0.8])
 		fence();
 
-	translate([-16, 55, 40]) rotate([90, 90, 90])
+	translate([-16, 55, 50]) rotate([90, 90, 90])
 		hinge();
 }
 
