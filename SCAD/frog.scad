@@ -25,6 +25,7 @@ translate([0, -60, -10])
 translate([-2, 70, 35]) rotate([90, 90, 270]) box();
 frog(1.2);
 
-
+//for one piece printing
+//translate([-237, 50, 0]) rotate([0, 0, 270])
 translate([59, 230, 0]) rotate([0, 0, 90]) door();
 
