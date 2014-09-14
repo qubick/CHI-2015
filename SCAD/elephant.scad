@@ -18,7 +18,9 @@ module door(){
 		hinge();
 }
 
-//translate([59, 215, 0]) rotate([0, 0, 90]) door();
+//for one piece print
+//translate([-221, 80, 0]) rotate([0, 0, 270])
+translate([59, 215, 0]) rotate([0, 0, 90]) door();
 
 //base
 translate([0, -60, -10]) cube([1, 150, 100]);
@@ -26,7 +28,7 @@ translate([0, -60, -10]) cube([1, 150, 100]);
 
 
 
-translate([-2, 70, 35]) rotate([90, 90, 270]) box();
+//translate([-2, 70, 35]) rotate([90, 90, 270]) box();
 
 
 elephant(1.2);
