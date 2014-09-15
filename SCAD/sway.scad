@@ -1,11 +1,14 @@
 module base()
- {
- 	cube([20, 10, 1]);
- 	translate([1,5,1])
- 		cylinder(r=0.5, h=2, $fn=50);
+{
+ 	//cube([20, 10, 1]);
+ 	//translate([1,5,1])
+ 		cylinder(r=0.5, h=2, $fn=50, center=true);
+		
+	translate([0, 0, 1]) cylinder(r=1, h=0.5, $fn=50, center=true);
+
  }
  
- module sway(){
+module sway(){
  	difference(){
  		cylinder(r=1, h=1, $fn=50);
  		cylinder(r=0.7, h=2, $fn=50);
@@ -17,7 +20,8 @@ module base()
  		cube([3,5,1]);
  }
  
- base();
- translate([1,5,1.5])
+translate([0, 0, 1]) base();
+
+translate([1,5,0])
  	rotate([0,0,50]) //can adjust
- 	%sway();
+ 	sway();
