@@ -33,8 +33,9 @@ module left_door(){
 translate([-54, 5, -100]) rotate([0, 0, 270]) right_door();
 translate([14, -30, -105]) left_door();
 
-
+/*
 translate([0, 0, 5]) monkey(1.2);
+
 
 //base
 translate([0, -70, -10])cube([1, 150, 100]);
@@ -43,3 +44,4 @@ rotate([0, 270, 0]) {
 	translate([40, 65, 2]) box();
 	translate([40, -53, 2]) box();
 }
+*/

@@ -1,4 +1,4 @@
-use <../SCAD/hinge-lego.scad>;
+use <hinge-lego.scad>;
 use <../SCAD/fence.scad>;
 
 //math_hinge();
@@ -6,7 +6,7 @@ use <../SCAD/fence.scad>;
 module giraffe(factor){
 
 	difference(){
-		scale([factor*1.3, factor*0.9, factor])
+		scale([factor*1.3, factor*0.9, factor*1.5])
 		import("../SCAD/component/giraffe.stl");
 		
 		translate([-50, -50, -11]) 
@@ -32,5 +32,4 @@ module door(){
 		hinge();
 }
 
-translate([11, 0, 100])
-door();
+//translate([11, 0, 100]) door();
