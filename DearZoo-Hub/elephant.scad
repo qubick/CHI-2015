@@ -1,4 +1,4 @@
-use <../SCAD/hinge-lego.scad>;
+use <hinge-lego.scad>;
 use <../SCAD/fence.scad>;
 
 module elephant(factor){
