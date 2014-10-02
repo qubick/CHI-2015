@@ -30,11 +30,11 @@ cube([1, 150, 100]);
 translate([-2, 5, -8]) rotate([270, 0, 90]) box();
 
 module door() {
-	translate([-13, 0, -3]) rotate([0, 0, 90])
+	translate([-13, -10, -6]) rotate([0, 0, 90])
 		hinge();
 
 	translate([-13, 0, 10]) rotate([0, -90, 0])
 		fence();
 }
 
-//translate([-1,150,0]) rotate([0, 90, 0]) door();
+translate([-1,150,0]) rotate([0, 90, 0]) door();
