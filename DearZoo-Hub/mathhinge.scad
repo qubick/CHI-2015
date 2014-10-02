@@ -14,14 +14,14 @@ height = 3;
 clearance = .2;		
 
 // Clearance between hinge and sides
-gap = .6; 				
+gap = .7; 				
 
 // Parameters that the user does not get to specify
 $fn=24*1;
 border = 2*1; 
 fudge = .01*1;			// to preserve mesh integrity
-corner = 0*1;      	// space between hinge and corner
-hinge_radius = height/2;
+corner = 2*1;      	// space between hinge and corner
+hinge_radius = height/2.5;
 cone_height = 1.5*hinge_radius;  
 
 //////////////////////////////////////////////////////
